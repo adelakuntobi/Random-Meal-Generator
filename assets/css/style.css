@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Open Sans', sans-serif !important;
+  background-color: #fafafa29;
+}
+
+/* Header */
+nav{
+  display: flex; 
+  justify-content: space-between;
+  padding: 20px 5%;
+  background-color: white;
+  box-shadow: -1px 9px 20px 4px #cecece14;
+}
+#logo{
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+}
+#food{
+  color: #3f51b5;
+}
+
+nav ul{
+  display: flex;
+}
+nav ul li{
+  list-style: none;
+  padding: 10px;
+  margin: auto;
+}
+nav .active,nav ul li:hover{
+  cursor: pointer;
+  background-color: #3f51b5;
+  border-radius: .25rem;
+  color: white;
+}
+
+/* Main content */
+main{
+  margin: 0 5%;
+}
+/* Introduction */
+.intro-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  line-height: 2;
+  margin: 0;
+  font-size: larger;
+}
+.intro-text button,#getAnother{
+  background-color: #3f51b5;
+  margin: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: .25rem;
+  color: white;
+  padding: .8rem 2.5rem;
+}
+.display-food{
+  display: none;
+  padding-bottom: 2rem;
+}
+.display-food h1{
+  font-size: 35px;
+  text-align: center;
+  padding: 2rem;
+}
+.display-food img{
+  margin: 0 auto 2rem;
+  border-radius: .5rem;
+  /* max-height: 90%; */
+  display: block; 
+  max-width: 100%;
+}
+.display-food p{
+  line-height: 2;
+  text-decoration: justify;
+}
+.display-food ol{
+  margin: 1rem 0;
+}
+.display-food li{
+  line-height: 2;
+  /* list-style: none; */
+  padding-left: 15px;
+  margin: 0 1.5rem;
+}
+.display-food h3{
+  font-weight: 600;
+  margin: 1.5rem;
+  list-style: none;
+  text-align: center;
+}
+video{
+  width: 40%;
+  margin: auto;
+  height: 300px;
+}
+label{
+  display: block;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+#another{
+  display: block;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+#youtube{
+  margin: 1rem 0;
+}
+#getAnother{
+  margin: 1rem auto;
+  display: block;
+}
+
+
+
+@media (max-width: 576px){
+  body{
+    
+  }
+  nav{
+    display: block;
+  }
+  main{
+    margin: 0 1.5rem;
+  }
+  .display-food h1{
+    padding: 2rem 0 !important;
+    font-size: 29px;
+  }
+
+  .intro-text{
+    width: 100%;
+  }
+  video{
+    width: 100%;
+    height: 170px;
+  }
+}
